@@ -1,12 +1,8 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.2
+import Ubuntu.Components 1.3
 import U1db 1.0 as U1db
 import "view"
 import "view/control"
-
-/*!
-    \brief MainView with a Label and Button elements.
-*/
 
 MainView {
     // objectName for functional testing purposes (autopilot-qt5)
@@ -214,4 +210,3 @@ MainView {
         execute(cmdPlayInput + url);
     }
 }
-

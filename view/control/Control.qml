@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.2
+import Ubuntu.Components 1.3
 import "../"
 
 Page {
@@ -70,7 +70,7 @@ Page {
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.topMargin: units.gu(2)
+        anchors.topMargin: units.gu(5)
 
         onValueChanged: {
             if (!updateState) {
@@ -170,7 +170,7 @@ Page {
 
     // workaround for updating play/pause buttons quicly
     function setState(stat)
-    {        
+    {
         state = stat;
 
         if (isPlaying()) {
